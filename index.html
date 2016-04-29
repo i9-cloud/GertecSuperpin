@@ -24,6 +24,139 @@
 
 <p>Helper .net de conexão com o superpin da Gertec</p>
 
+<h3>
+<a id="comandos-do-pin" class="anchor" href="#comandos-do-pin" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>COMANDOS DO PIN</h3>
+
+<ol>
+<li>
+<strong>BACKSPACE</strong> Apaga o caracter anterior à posição atual do cursor e retrocede o cursor juntamente com todos os caracteres subsequentes.</li>
+<li>
+<strong>LIMPA DISPLAY</strong> Apaga todo o display e coloca o cursor na posição inicial (linha 1, coluna 1).</li>
+<li>
+<strong>HOME</strong> Coloca o cursor na posição inicial linha 1, coluna 1.</li>
+<li>
+<strong>ATIVA CURSOR</strong> Torna o cursor visível.</li>
+<li>
+<strong>CURSOR PISCANTE</strong> Transforma o cursor em um bloco piscante.</li>
+<li>
+<strong>APAGA CURSOR</strong> O cursor fica invisível porém pode ser movimentado livremente.</li>
+<li>
+<strong>CURSOR NORMAL</strong> Coloca o cursor na forma de um traço na parte inferior do caracter.</li>
+<li>
+<strong>POSICIONA CURSOR</strong> Move o cursor para a posição especificada nos dois bytes subsequentes que são respectivamente linha e coluna.<br>
+Linha: 1 a 2 inclusive<br>
+Coluna: 1 a 16 inclusive<br>
+Valores fora das faixas acima tornam o comando sem efeito.<br>
+</li>
+<li>
+<strong>CARACTERES ESPECIAIS</strong> Programa caracteres especias no display.</li>
+<li>
+<strong>BEEP</strong> Emite um sinal sonoro com duração de 200 ms.</li>
+<li>
+<strong>HABILITA CARTÃO</strong> Habilita a leitura e transmissão dos dados contidos em um cartão
+magnético.</li>
+<li>
+<strong>DESABILITA CARTÃO</strong> Inibe a leitura de cartão magnético.</li>
+<li>
+<strong>HABILITA TECLADO</strong> Habilita a transmissão das teclas digitadas.</li>
+<li>
+<strong>DESABILITA TECLADO</strong> Inibe a transmissão das teclas digitadas.</li>
+<li>
+<strong>HAB. ECO DO TECLADO</strong> Mostra as teclas digitadas no display.</li>
+<li>
+<strong>DESAB. ECO DO TECLADO</strong> Não mostra as teclas digitadas no display.</li>
+<li>
+<strong>HABILITA LOOPBACK</strong> Habilita a transmissão (eco) dos caracteres recebidos pela porta serial.</li>
+<li>
+<strong>DESABILITA LOOPBACK</strong> Desabilita o eco dos caracteres recebidos pela porta serial. </li>
+</ol>
+
+<h3>
+<a id="tabela-de-comandos" class="anchor" href="#tabela-de-comandos" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tabela de Comandos</h3>
+
+<table>
+<thead>
+<tr>
+<th>Comando</th>
+<th>CÓDIGO (HEX / DEC)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Backspace</td>
+<td>08 / 008</td>
+</tr>
+<tr>
+<td>Limpa display (Form Feed)</td>
+<td>0C / 012</td>
+</tr>
+<tr>
+<td>Home</td>
+<td>0B / 011</td>
+</tr>
+<tr>
+<td>Ativa cursor</td>
+<td>11 / 017</td>
+</tr>
+<tr>
+<td>Cursor piscante</td>
+<td>12 / 018</td>
+</tr>
+<tr>
+<td>Apaga cursor</td>
+<td>13 / 019</td>
+</tr>
+<tr>
+<td>Beep</td>
+<td>14 / 020</td>
+</tr>
+<tr>
+<td>Cursor normal</td>
+<td>15 / 021</td>
+</tr>
+<tr>
+<td>Habilita cartão</td>
+<td>80 / 128</td>
+</tr>
+<tr>
+<td>Desabilita cartão</td>
+<td>81 / 129</td>
+</tr>
+<tr>
+<td>Habilita teclado</td>
+<td>82 / 130</td>
+</tr>
+<tr>
+<td>Desabilita teclado</td>
+<td>83 / 131</td>
+</tr>
+<tr>
+<td>Posiciona o cursor</td>
+<td>84 / 132</td>
+</tr>
+<tr>
+<td>Habilita eco do teclado</td>
+<td>85 / 133</td>
+</tr>
+<tr>
+<td>Desabilita eco do teclado</td>
+<td>86 / 134</td>
+</tr>
+<tr>
+<td>Caracteres especiais</td>
+<td>87 / 135</td>
+</tr>
+<tr>
+<td>Habilita loopback</td>
+<td>88 / 136</td>
+</tr>
+<tr>
+<td>Desabilita loopback</td>
+<td>89 / 137</td>
+</tr>
+</tbody>
+</table>
+
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/luizhmcarvalho/GertecSuperpin">Gertec Superpin</a> is maintained by <a href="https://github.com/luizhmcarvalho">luizhmcarvalho</a>.</span>
 
